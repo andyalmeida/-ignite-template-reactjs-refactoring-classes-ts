@@ -8,7 +8,7 @@ interface ModalProps {
 }
 
 function Modal({ isOpen, setIsOpen, children }: ModalProps) {
-  const [modalStatus, setModalStatus] = useState<boolean>(true);
+  const [modalStatus, setModalStatus] = useState(isOpen);
 
   useEffect(() => {
     setModalStatus(isOpen);
