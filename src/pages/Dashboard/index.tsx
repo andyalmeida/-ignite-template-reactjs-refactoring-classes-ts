@@ -13,6 +13,7 @@ type FoodType = {
   name: string;
   description: string;
   price: number;
+  available: boolean;
 }
 
 function Dashboard() {
